@@ -19,7 +19,7 @@ public class TestServicioRolBDD {
         // ***** PRUEBA DE BUSQUEDA TODOS LOS ROLES *****
         //buscarTodosLosRoles();
         // ***** PRUEBA DE BUSQUEDA DE ROL POR ID *****
-        //buscarRolPorID(new Long(5));
+        buscarRolPorID(new Long(1));
         // ***** PRUEBA DE INSERTAR NUEVO ROL *****
         //insertarRol(new Long(1), "JEFE DE MARCA", "INACTIVO");
         // ***** PRUEBA DE INSERTAR NUEVO ROL *****

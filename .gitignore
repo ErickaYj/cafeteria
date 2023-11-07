@@ -23,3 +23,5 @@
 hs_err_pid*
 replay_pid*
 /Codigo_Java/nbproject/private/
+/Codigo_Java/build/
+/Codigo_Java/dist/

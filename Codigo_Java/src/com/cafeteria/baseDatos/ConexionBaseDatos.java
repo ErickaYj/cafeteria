@@ -38,7 +38,7 @@ public class ConexionBaseDatos implements Serializable{
         if (conn == null) {
             //Class.forName("com.mysql.jdbc.Driver");
             Class.forName("com.mysql.cj.jdbc.Driver");            
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/cafeteria","root", "erika123"); // PRODUCCION
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/cafeteria","cafeteria", "erika123"); // PRODUCCION
             System.out.println("CONEXION A MYSQL EXITOSA");
         }
         return conn;

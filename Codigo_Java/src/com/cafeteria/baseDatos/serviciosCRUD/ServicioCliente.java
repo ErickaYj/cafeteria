@@ -20,6 +20,7 @@ import javax.naming.NamingException;
  *
  * @author j_seb
  */
+//ERICKA CORREGIR ESTE TODA LA CLASE Y SUS METODOS REFERENCIANDO AL CLIENTE, 
 public class ServicioCliente {
 /**
      * Metodo para buscar un CLIENTE Por NumeroCedula

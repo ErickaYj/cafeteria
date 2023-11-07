@@ -24,6 +24,11 @@ public class Cliente implements Serializable {
     
     private String email;
 
+    public Cliente() {
+    }
+    
+    
+
     public Cliente(Long numeroCedula, String nombreCliente, String direccion, String celular, String rol) {
         this.numeroCedula = numeroCedula;
         this.nombreCliente = nombreCliente;

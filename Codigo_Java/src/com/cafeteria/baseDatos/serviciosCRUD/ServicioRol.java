@@ -37,7 +37,7 @@ public class ServicioRol {
             con = conexion.obtenerConexion(null);
             //Declaro la sentencia SQL
             StringBuilder sb = new StringBuilder();
-            sb.append("SELECT * FROM ROL ");
+            sb.append("SELECT * FROM rol ");
             sb.append(" WHERE ESTADO = '" + Constantes.ESTADO_ACTIVO + "'");
             // Preparo la instruccion
             pstCons = con.prepareStatement(sb.toString());
@@ -87,7 +87,7 @@ public class ServicioRol {
             con = conexion.obtenerConexion(null);
             //Declaro la sentencia SQL
             StringBuilder sb = new StringBuilder();
-            sb.append("SELECT * FROM ROL ");
+            sb.append("SELECT * FROM rol ");
             sb.append(" WHERE idrol = " + idBuscar);
             // Preparo la instruccion
             pstCons = con.prepareStatement(sb.toString());
@@ -238,7 +238,7 @@ public class ServicioRol {
             con = conexion.obtenerConexion(null);
             //Declaro la sentencia SQL
             StringBuilder sb = new StringBuilder();
-            sb.append("DELETE FROM ROL  ");
+            sb.append("DELETE FROM rol  ");
             sb.append(" WHERE idrol  = " + rolEliminar.getId());
             // Preparo la instruccion
             pstCons = con.prepareStatement(sb.toString());

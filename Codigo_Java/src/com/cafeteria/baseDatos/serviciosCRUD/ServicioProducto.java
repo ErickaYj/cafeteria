@@ -20,6 +20,7 @@ import javax.naming.NamingException;
  *
  * @author j_seb
  */
+//ERICKA CORREGIR ESTE TODA LA CLASE Y SUS METODOS REFERENCIANDO AL PRODUCTO, Y HACER CLASE DE TEST PARA PRODUCTO
 public class ServicioProducto {
      /**
      * Metodo para obtener los Productos ACTIVOS
@@ -37,7 +38,7 @@ public class ServicioProducto {
         con = conexion.obtenerConexion(null);
         //Declaro la sentencia SQL
         StringBuilder sb = new StringBuilder();
-        sb.append("SELECT * FROM PRODUCTO ");
+        sb.append("SELECT * FROM producto ");
         sb.append(" WHERE PRODUCTO = '" + Constantes.ESTADO_ACTIVO + "'");
         // Preparo la instruccion
         pstCons = con.prepareStatement(sb.toString());
@@ -86,7 +87,7 @@ public class ServicioProducto {
             con = conexion.obtenerConexion(null);
             //Declaro la sentencia SQL
             StringBuilder sb = new StringBuilder();
-            sb.append("SELECT * FROM Producto ");
+            sb.append("SELECT * FROM producto ");
             sb.append(" WHERE idProducto = " + idBuscar);
             // Preparo la instruccion
             pstCons = con.prepareStatement(sb.toString());
@@ -177,6 +178,8 @@ public class ServicioProducto {
      *      false = ERROR
      * @throws SQLException 
      */
+    
+    //ERICKA CORREGIR ESTE METODO, TIENE QUE SER ACTUALIZACION DE PRODUCTO
     public static boolean actualizarRol (Rol rolActualizar) throws SQLException{
         boolean respuesta = true;
         ConexionBaseDatos conexion = new ConexionBaseDatos();
@@ -227,6 +230,7 @@ public class ServicioProducto {
      *      false = ERROR
      * @throws SQLException 
      */
+    //ERICKA CORREGIR ESTE METODO, TIENE QUE SER ELIMINACION DE PRODUCTO
     public static boolean eliminarProducto (Rol productoEliminar) throws SQLException{
         boolean respuesta = true;
         ConexionBaseDatos conexion = new ConexionBaseDatos();
@@ -271,6 +275,7 @@ public class ServicioProducto {
      * @return
      * @throws SQLException 
      */
+    //ERICKA CORREGIR ESTE METODO, TIENE QUE SER OBTENER SIGUIENTE ID DE PRODUCTO
     public static Long obtenerSiguienteID() throws SQLException{
         Long respuesta = new Long(-1);
         ConexionBaseDatos conexion = new ConexionBaseDatos();
